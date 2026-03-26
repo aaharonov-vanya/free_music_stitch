@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;html class="dark" lang="en"&gt;&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="utf-8"/&gt;</p>
+<p class="p1">&lt;meta content="width=device-width, initial-scale=1.0" name="viewport"/&gt;</p>
+<p class="p1">&lt;title&gt;Music Now - Discovery Feed&lt;/title&gt;</p>
+<p class="p1">&lt;script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;amp;family=Manrope:wght@300;400;500;600;700;800&amp;amp;display=swap" rel="stylesheet"/&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;amp;display=swap" rel="stylesheet"/&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;amp;display=swap" rel="stylesheet"/&gt;</p>
+<p class="p1">&lt;script id="tailwind-config"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>tailwind.config = {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>darkMode: "class",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>theme: {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>extend: {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>colors: {</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"outline": "#886b94",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-secondary-container": "#dcfff8",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"error-dim": "#d73357",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"primary-fixed": "#bc87fe",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"tertiary-dim": "#eb7c8f",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-error-container": "#ffb2b9",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"background": "#1a0426",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"secondary-dim": "#33e9d5",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"primary-dim": "#ba85fb",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-tertiary": "#69162c",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-variant": "#381749",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-primary-fixed": "#000000",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"primary-container": "#bc87fe",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"inverse-on-surface": "#664b72",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface": "#1a0426",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-surface-variant": "#c0a0cc",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-primary": "#440080",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"error": "#ff6e84",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"tertiary-fixed-dim": "#f18194",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-dim": "#1a0426",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"tertiary-container": "#fb899c",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-container-lowest": "#000000",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-primary-fixed-variant": "#40007a",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"inverse-surface": "#fff7fc",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"secondary-fixed-dim": "#33e9d5",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"secondary": "#4af8e3",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-tint": "#c799ff",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"secondary-fixed": "#4af8e3",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-secondary-fixed-variant": "#00655b",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"tertiary-fixed": "#ff8fa2",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-container-low": "#21072e",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-container-highest": "#381749",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-primary-container": "#340064",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"primary-fixed-dim": "#af7aef",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-tertiary-fixed-variant": "#6c192e",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-container": "#280c37",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-surface": "#f7ddff",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"outline-variant": "#583e64",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-secondary-fixed": "#00463f",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"secondary-container": "#006a60",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"inverse-primary": "#7744b5",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"primary": "#c799ff",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-background": "#f7ddff",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-tertiary-fixed": "#390010",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-container-high": "#301140",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-tertiary-container": "#5b0a22",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"tertiary": "#ff9dac",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-secondary": "#005b51",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-error": "#490013",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-bright": "#3f1c52",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"error-container": "#a70138"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>fontFamily: {</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"headline": ["Space Grotesk"],</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"body": ["Manrope"],</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"label": ["Manrope"]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},</p>
+<p class="p1"><span class="Apple-converted-space">          </span>},</p>
+<p class="p1"><span class="Apple-converted-space">        </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.material-symbols-outlined {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hide-scrollbar::-webkit-scrollbar { display: none; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: max(884px, 100dvh);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary"&gt;</p>
+<p class="p1">&lt;!-- TopAppBar --&gt;</p>
+<p class="p1">&lt;header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-transparent backdrop-blur-2xl dark:bg-purple-950/40 bg-gradient-to-b from-purple-950/80 to-transparent"&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-2"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-purple-300 dark:text-purple-200" data-icon="graphic_eq"&gt;graphic_eq&lt;/span&gt;</p>
+<p class="p1">&lt;h1 class="text-2xl font-black text-purple-200 tracking-tighter uppercase font-headline"&gt;Music Now&lt;/h1&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;button class="text-purple-300 dark:text-purple-200 hover:text-teal-300 transition-colors active:scale-95"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="tune"&gt;tune&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p1">&lt;main class="pt-24 pb-32 px-4 max-w-2xl mx-auto"&gt;</p>
+<p class="p1">&lt;!-- Hero Section / Context --&gt;</p>
+<p class="p1">&lt;section class="mb-10"&gt;</p>
+<p class="p1">&lt;div class="flex items-end justify-between mb-2"&gt;</p>
+<p class="p1">&lt;h2 class="font-headline font-bold text-4xl tracking-tighter leading-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Live Near &lt;span class="text-secondary drop-shadow-[0_0_8px_rgba(74,248,227,0.4)]"&gt;You&lt;/span&gt;</p>
+<p class="p1">&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="bg-secondary-container/30 px-3 py-1 rounded-full border border-secondary/20"&gt;</p>
+<p class="p1">&lt;span class="text-[10px] font-bold uppercase tracking-widest text-secondary font-label"&gt;Within 40 Miles&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;p class="text-on-surface-variant font-body text-sm max-w-[80%]"&gt;Discover the rhythm of the city. All events listed are free entry tonight and through the weekend.&lt;/p&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- Time Filters --&gt;</p>
+<p class="p1">&lt;nav class="flex gap-3 mb-10 overflow-x-auto hide-scrollbar py-2"&gt;</p>
+<p class="p1">&lt;button class="bg-primary text-on-primary-container px-6 py-2 rounded-full font-label font-bold text-xs uppercase tracking-widest active:scale-95 transition-all shadow-[0_0_15px_rgba(199,153,255,0.3)]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Today</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p1">&lt;button class="bg-surface-container-high text-on-surface-variant px-6 py-2 rounded-full font-label font-bold text-xs uppercase tracking-widest hover:bg-surface-bright transition-all active:scale-95"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Tomorrow</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p1">&lt;button class="bg-surface-container-high text-on-surface-variant px-6 py-2 rounded-full font-label font-bold text-xs uppercase tracking-widest hover:bg-surface-bright transition-all active:scale-95"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>This Weekend</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p1">&lt;!-- Bento Feed --&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-1 gap-6"&gt;</p>
+<p class="p1">&lt;!-- Event Card 1: Featured Asymmetric --&gt;</p>
+<p class="p1">&lt;div class="group relative bg-surface-container-low rounded-lg overflow-hidden transition-all duration-500 hover:bg-surface-container border border-outline-variant/10"&gt;</p>
+<p class="p1">&lt;div class="relative h-64 w-full"&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent z-10"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;img class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="cinematic shot of a jazz guitarist performing in a dimly lit club with purple neon stage lights and smoke atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuMyqgF7EWYnCew9abxxcLWAHHrpLxTMiGk5HqYWbo-D1135XheAVBPLaQzGHZo8AJl-gi-EBUbCaiCyGYE8pWxR5AwOh3QqEU1rp38QcP4h1Rg5TPV8PCq_-eJSE4rR8VNo-uBOpJUT754BWUFfKggdnDuKvlqo1ZWWBhbuIeSuAVGAsnjJbLTSFqFR2EjeNgUtY7N0suE6D0w_cQynX6ZUpQhmCjW4ekNGn97w51bcX00gaQsiGTnMg_7t96Xm4caTAiBQc5YixJ"/&gt;</p>
+<p class="p1">&lt;div class="absolute top-4 left-4 z-20 flex gap-2"&gt;</p>
+<p class="p1">&lt;span class="bg-secondary text-on-secondary-fixed font-label font-extrabold text-[10px] px-2 py-1 rounded-full uppercase tracking-tighter"&gt;Free&lt;/span&gt;</p>
+<p class="p1">&lt;span class="bg-surface-container-lowest/60 backdrop-blur-md text-on-surface font-label text-[10px] px-2 py-1 rounded-full uppercase tracking-tighter"&gt;Live Now&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-6 relative -mt-12 z-20"&gt;</p>
+<p class="p1">&lt;div class="flex justify-between items-start mb-4"&gt;</p>
+<p class="p1">&lt;div class="space-y-1"&gt;</p>
+<p class="p1">&lt;p class="text-secondary-dim font-label font-bold text-[10px] uppercase tracking-[0.2em]"&gt;Bar &amp;amp; Lounge&lt;/p&gt;</p>
+<p class="p1">&lt;h3 class="font-headline font-bold text-3xl text-on-surface tracking-tighter"&gt;The Midnight Trio&lt;/h3&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="text-right"&gt;</p>
+<p class="p1">&lt;span class="text-on-surface font-headline font-bold text-xl leading-none"&gt;8:00 PM&lt;/span&gt;</p>
+<p class="p1">&lt;p class="text-on-surface-variant text-[10px] uppercase font-bold tracking-widest"&gt;Starts In 20m&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex items-center justify-between pt-4 border-t border-outline-variant/10"&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-2"&gt;</p>
+<p class="p1">&lt;div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-primary text-sm" data-icon="local_bar"&gt;local_bar&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;p class="text-on-surface font-bold text-sm leading-none"&gt;Neon Cellar&lt;/p&gt;</p>
+<p class="p1">&lt;p class="text-on-surface-variant text-[10px]"&gt;1.2 miles away&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;button class="bg-primary/10 hover:bg-primary text-primary hover:text-on-primary-container p-2 rounded-full transition-all active:scale-90"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="favorite"&gt;favorite&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Event Card 2: Minimalist Secondary --&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-6"&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-low rounded-lg p-6 flex flex-col justify-between border border-outline-variant/10 group"&gt;</p>
+<p class="p1">&lt;div class="space-y-4"&gt;</p>
+<p class="p1">&lt;div class="flex justify-between items-center"&gt;</p>
+<p class="p1">&lt;span class="bg-tertiary-container/20 text-tertiary font-label font-bold text-[10px] px-2 py-1 rounded uppercase"&gt;Restaurant&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-on-surface-variant text-[10px] font-bold font-label uppercase"&gt;8.4 Miles&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;h3 class="font-headline font-bold text-xl text-on-surface group-hover:text-primary transition-colors"&gt;Luna Sol &amp;amp; The Strings&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-on-surface-variant text-sm mt-1"&gt;Acustic Folk Session&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="mt-8 flex items-end justify-between"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;p class="text-on-surface-variant text-[10px] uppercase font-bold tracking-widest mb-1"&gt;Venue&lt;/p&gt;</p>
+<p class="p1">&lt;p class="font-bold text-on-surface"&gt;The Grapevine Inn&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="text-right"&gt;</p>
+<p class="p1">&lt;p class="text-on-surface-variant text-[10px] uppercase font-bold tracking-widest mb-1"&gt;Time&lt;/p&gt;</p>
+<p class="p1">&lt;p class="font-bold text-secondary"&gt;7:30 PM&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-low rounded-lg p-6 flex flex-col justify-between border border-outline-variant/10 group relative overflow-hidden"&gt;</p>
+<p class="p1">&lt;div class="absolute top-0 right-0 w-24 h-24 bg-primary/10 blur-3xl rounded-full -mr-10 -mt-10"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="space-y-4"&gt;</p>
+<p class="p1">&lt;div class="flex justify-between items-center"&gt;</p>
+<p class="p1">&lt;span class="bg-secondary-container/20 text-secondary font-label font-bold text-[10px] px-2 py-1 rounded uppercase"&gt;Winery&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-on-surface-variant text-[10px] font-bold font-label uppercase"&gt;12.1 Miles&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;h3 class="font-headline font-bold text-xl text-on-surface group-hover:text-primary transition-colors"&gt;Vintage Vibes DJ&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-on-surface-variant text-sm mt-1"&gt;Retro Vinyl Night&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="mt-8 flex items-end justify-between"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;p class="text-on-surface-variant text-[10px] uppercase font-bold tracking-widest mb-1"&gt;Venue&lt;/p&gt;</p>
+<p class="p1">&lt;p class="font-bold text-on-surface"&gt;Cloud Nine Estate&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="text-right"&gt;</p>
+<p class="p1">&lt;p class="text-on-surface-variant text-[10px] uppercase font-bold tracking-widest mb-1"&gt;Time&lt;/p&gt;</p>
+<p class="p1">&lt;p class="font-bold text-secondary"&gt;9:00 PM&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Event Card 3: Detailed Row --&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-low rounded-lg border border-outline-variant/10 overflow-hidden flex flex-col sm:flex-row h-auto sm:h-48 group"&gt;</p>
+<p class="p1">&lt;div class="sm:w-1/3 relative h-40 sm:h-full"&gt;</p>
+<p class="p1">&lt;img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close up of a professional microphone in a moody bar setting with warm incandescent bokeh lights in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq-bSYjCsD_FYhXAM2VOnHWsJWO2NZODi6ZDzXHC-Pf3On7QNGGzpFz9PZ6CfOsrddI3N2a024d7HDB_hIRh-sMENzR_ZU2yECRnZOTE0TaLB2sIOHlttc5fY6m4cyls8xiFqvZSbviEWl-EO2YQVFL4SEjiB4kQYjQq3V5cXDeG5aj-48XsJTVnegYj0VmuvNRyiqih7Sj2yTspOLAHmi5lO9svioYr1Al8E-i9CcH8DM26NqOFNRI5WTsvDbzPENaEiHdxCTZ0S6"/&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-6 flex-1 flex flex-col justify-center"&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-2 mb-2"&gt;</p>
+<p class="p1">&lt;span class="text-secondary text-[10px] font-bold font-label tracking-widest uppercase"&gt;Bar&lt;/span&gt;</p>
+<p class="p1">&lt;span class="w-1 h-1 rounded-full bg-outline-variant"&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-on-surface-variant text-[10px] font-bold font-label tracking-widest uppercase"&gt;Tonight&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;h3 class="font-headline font-bold text-2xl text-on-surface mb-1"&gt;Open Mic Mondays&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-on-surface-variant text-sm mb-4"&gt;Local talent showcase. Sign up at 6PM.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="flex items-center justify-between mt-auto"&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-on-surface-variant text-sm" data-icon="location_on"&gt;location_on&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-sm font-medium"&gt;Brew &amp;amp; Bass Taphouse&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;span class="font-headline font-bold text-on-surface"&gt;10:00 PM&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/main&gt;</p>
+<p class="p1">&lt;!-- BottomNavBar --&gt;</p>
+<p class="p1">&lt;nav class="fixed bottom-0 w-full flex justify-around items-center px-4 pb-8 pt-2 z-50"&gt;</p>
+<p class="p1">&lt;div class="fixed bottom-6 mx-auto left-4 right-4 rounded-full max-w-md bg-purple-950/60 backdrop-blur-2xl flex justify-around items-center py-3 shadow-[0_20px_40px_rgba(0,0,0,0.4)] border border-purple-200/5"&gt;</p>
+<p class="p1">&lt;a class="flex flex-col items-center justify-center text-teal-400 drop-shadow-[0_0_10px_rgba(74,248,227,0.6)] scale-110 group" href="#"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="explore" style="font-variation-settings: 'FILL' 1;"&gt;explore&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1"&gt;Discover&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;a class="flex flex-col items-center justify-center text-purple-200/40 hover:text-purple-100 transition-all group" href="#"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="map"&gt;map&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1"&gt;Map&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;a class="flex flex-col items-center justify-center text-purple-200/40 hover:text-purple-100 transition-all group" href="#"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="favorite"&gt;favorite&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1"&gt;Saved&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;a class="flex flex-col items-center justify-center text-purple-200/40 hover:text-purple-100 transition-all group" href="#"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="person"&gt;person&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1"&gt;Profile&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p1">&lt;/body&gt;&lt;/html&gt;</p>
+</body>
+</html>
